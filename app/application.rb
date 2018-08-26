@@ -28,7 +28,6 @@ class Application
           @@cart << item
         else
           resp.write "error"
-        end
       end
     else
       resp.write "Path Not Found"
