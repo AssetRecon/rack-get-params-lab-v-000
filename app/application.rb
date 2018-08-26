@@ -24,7 +24,7 @@ class Application
     elsif req.path.match(/add/)
       search_cart = req.params["item"]
       @@items.each do |item|
-        if search_cart = item
+        if search_cart == item
           @@cart << item
           resp.write "added #{item}"
         else
