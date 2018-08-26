@@ -26,7 +26,7 @@ class Application
       @@items.each do |item|
         if search_cart = item
           @@cart << item
-          resp.write "add #{item}"
+          resp.write "added #{item}"
         else
           resp.write "error"
       end
