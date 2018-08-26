@@ -29,6 +29,7 @@ class Application
         else
           resp.write "error"
       end
+    end
     else
       resp.write "Path Not Found"
     end
